@@ -61,8 +61,6 @@ describe("App component", () => {
 
     await actWait();
 
-    expect(getByTestId("repository-list")).toContainElement(
-      getByText("Remover")
-    );
+    expect(getByTestId("repository-list")).toBeEmpty();
   });
 });
